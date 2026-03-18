@@ -78,3 +78,5 @@ By leveraging data-driven insights, it is possible to identify failing water wel
 - Hyperparameter tuning
 - Geospatial modeling
 - Handling class imbalance further
+
+[View the Tableau Dashboard]https://public.tableau.com/app/profile/mercy.apondi/viz/WellAgeFeature/Dashboard1?publish=yes

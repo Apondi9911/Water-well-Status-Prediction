@@ -1,0 +1,1918 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20253.25.1117.1115                               -->
+<workbook original-version='18.1' source-build='2025.3.0 (20253.25.1117.1115)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelExtractV2 />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='clean_water_wells' inline='true' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='clean_water_wells' name='textscan.06jir330qecfew1dqrs4n11at3tr'>
+            <connection class='textscan' directory='C:/Users/HP/Documents/Project_Phase3' filename='clean_water_wells.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.06jir330qecfew1dqrs4n11at3tr' name='clean_water_wells.csv' table='[clean_water_wells#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id' ordinal='0' />
+            <column datatype='real' name='amount_tsh' ordinal='1' />
+            <column datatype='date' name='date_recorded' ordinal='2' />
+            <column datatype='string' name='funder' ordinal='3' />
+            <column datatype='integer' name='gps_height' ordinal='4' />
+            <column datatype='string' name='installer' ordinal='5' />
+            <column datatype='real' name='longitude' ordinal='6' />
+            <column datatype='real' name='latitude' ordinal='7' />
+            <column datatype='string' name='wpt_name' ordinal='8' />
+            <column datatype='integer' name='num_private' ordinal='9' />
+            <column datatype='string' name='basin' ordinal='10' />
+            <column datatype='string' name='subvillage' ordinal='11' />
+            <column datatype='string' name='region' ordinal='12' />
+            <column datatype='integer' name='region_code' ordinal='13' />
+            <column datatype='integer' name='district_code' ordinal='14' />
+            <column datatype='string' name='lga' ordinal='15' />
+            <column datatype='string' name='ward' ordinal='16' />
+            <column datatype='integer' name='population' ordinal='17' />
+            <column datatype='boolean' name='public_meeting' ordinal='18' />
+            <column datatype='string' name='recorded_by' ordinal='19' />
+            <column datatype='string' name='scheme_management' ordinal='20' />
+            <column datatype='string' name='scheme_name' ordinal='21' />
+            <column datatype='boolean' name='permit' ordinal='22' />
+            <column datatype='integer' name='construction_year' ordinal='23' />
+            <column datatype='string' name='extraction_type' ordinal='24' />
+            <column datatype='string' name='extraction_type_group' ordinal='25' />
+            <column datatype='string' name='extraction_type_class' ordinal='26' />
+            <column datatype='string' name='management' ordinal='27' />
+            <column datatype='string' name='management_group' ordinal='28' />
+            <column datatype='string' name='payment' ordinal='29' />
+            <column datatype='string' name='payment_type' ordinal='30' />
+            <column datatype='string' name='water_quality' ordinal='31' />
+            <column datatype='string' name='quality_group' ordinal='32' />
+            <column datatype='string' name='quantity' ordinal='33' />
+            <column datatype='string' name='quantity_group' ordinal='34' />
+            <column datatype='string' name='source' ordinal='35' />
+            <column datatype='string' name='source_type' ordinal='36' />
+            <column datatype='string' name='source_class' ordinal='37' />
+            <column datatype='string' name='waterpoint_type' ordinal='38' />
+            <column datatype='string' name='waterpoint_type_group' ordinal='39' />
+            <column datatype='string' name='status_group' ordinal='40' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>id</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>amount_tsh</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[amount_tsh]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>amount_tsh</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>date_recorded</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[date_recorded]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>date_recorded</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>funder</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[funder]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>funder</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>gps_height</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[gps_height]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>gps_height</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>installer</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[installer]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>installer</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>longitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[longitude]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>longitude</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>latitude</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[latitude]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>latitude</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>wpt_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[wpt_name]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>wpt_name</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>num_private</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[num_private]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>num_private</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>basin</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[basin]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>basin</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>subvillage</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[subvillage]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>subvillage</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[region]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>region</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>region_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[region_code]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>region_code</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>district_code</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[district_code]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>district_code</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lga</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lga]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>lga</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ward</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ward]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>ward</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>population</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[population]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>population</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>public_meeting</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[public_meeting]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>public_meeting</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recorded_by</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recorded_by]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>recorded_by</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheme_management</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scheme_management]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>scheme_management</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>scheme_name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[scheme_name]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>scheme_name</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>permit</remote-name>
+            <remote-type>11</remote-type>
+            <local-name>[permit]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>permit</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>boolean</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>construction_year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[construction_year]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>construction_year</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraction_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[extraction_type]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>extraction_type</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraction_type_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[extraction_type_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>extraction_type_group</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>extraction_type_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[extraction_type_class]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>extraction_type_class</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>management</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[management]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>management</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>management_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[management_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>management_group</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>payment</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>payment_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[payment_type]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>payment_type</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>water_quality</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[water_quality]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>water_quality</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quality_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quality_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>quality_group</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quantity]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>quantity</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>quantity_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[quantity_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>quantity_group</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>source</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_type]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>source_type</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>source_class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[source_class]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>source_class</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waterpoint_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[waterpoint_type]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>waterpoint_type</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>waterpoint_type_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[waterpoint_type_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>waterpoint_type_group</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>status_group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[status_group]</local-name>
+            <parent-name>[clean_water_wells.csv]</parent-name>
+            <remote-alias>status_group</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Clean Funding' datatype='real' name='[Calculation_1104784500998144]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [amount_tsh] = 0 THEN NULL ELSE [amount_tsh] END' />
+      </column>
+      <column caption='Well Age' datatype='integer' name='[Calculation_1104784502038529]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IF [construction_year] = 0 THEN NULL &#13;&#10;ELSE YEAR(TODAY()) - [construction_year] &#13;&#10;END' />
+      </column>
+      <column caption='clean_water_wells.csv' datatype='table' name='[__tableau_internal_object_id__].[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]' role='measure' type='quantitative' />
+      <column caption='Amount Tsh' datatype='real' name='[amount_tsh]' role='measure' type='quantitative' />
+      <column caption='Basin' datatype='string' name='[basin]' role='dimension' type='nominal' />
+      <column caption='Construction Year' datatype='integer' name='[construction_year]' role='dimension' type='quantitative' />
+      <column caption='Date Recorded' datatype='date' name='[date_recorded]' role='dimension' type='ordinal' />
+      <column caption='District Code' datatype='integer' name='[district_code]' role='dimension' type='ordinal' />
+      <column caption='Extraction Type' datatype='string' name='[extraction_type]' role='dimension' type='nominal' />
+      <column caption='Extraction Type Class' datatype='string' name='[extraction_type_class]' role='dimension' type='nominal' />
+      <column caption='Extraction Type Group' datatype='string' name='[extraction_type_group]' role='dimension' type='nominal' />
+      <column caption='Funder' datatype='string' name='[funder]' role='dimension' type='nominal' />
+      <column caption='Gps Height' datatype='integer' name='[gps_height]' role='measure' type='quantitative' />
+      <column caption='Id' datatype='integer' name='[id]' role='dimension' type='ordinal' />
+      <column caption='Installer' datatype='string' name='[installer]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column caption='Lga' datatype='string' name='[lga]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Management' datatype='string' name='[management]' role='dimension' type='nominal' />
+      <column caption='Management Group' datatype='string' name='[management_group]' role='dimension' type='nominal' />
+      <column caption='Num Private' datatype='integer' name='[num_private]' role='measure' type='quantitative' />
+      <column caption='Payment' datatype='string' name='[payment]' role='dimension' type='nominal' />
+      <column caption='Payment Type' datatype='string' name='[payment_type]' role='dimension' type='nominal' />
+      <column caption='Permit' datatype='boolean' name='[permit]' role='dimension' type='nominal' />
+      <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+      <column caption='Public Meeting' datatype='boolean' name='[public_meeting]' role='dimension' type='nominal' />
+      <column caption='Quality Group' datatype='string' name='[quality_group]' role='dimension' type='nominal' />
+      <column caption='Quantity' datatype='string' name='[quantity]' role='dimension' type='nominal' />
+      <column caption='Quantity Group' datatype='string' name='[quantity_group]' role='dimension' type='nominal' />
+      <column caption='Recorded By' datatype='string' name='[recorded_by]' role='dimension' type='nominal' />
+      <column caption='Region' datatype='string' name='[region]' role='dimension' type='nominal' />
+      <column caption='Region Code' datatype='integer' name='[region_code]' role='dimension' type='ordinal' />
+      <column caption='Scheme Management' datatype='string' name='[scheme_management]' role='dimension' type='nominal' />
+      <column caption='Scheme Name' datatype='string' name='[scheme_name]' role='dimension' type='nominal' />
+      <column caption='Source' datatype='string' name='[source]' role='dimension' type='nominal' />
+      <column caption='Source Class' datatype='string' name='[source_class]' role='dimension' type='nominal' />
+      <column caption='Source Type' datatype='string' name='[source_type]' role='dimension' type='nominal' />
+      <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+      <column caption='Subvillage' datatype='string' name='[subvillage]' role='dimension' type='nominal' />
+      <column caption='Ward' datatype='string' name='[ward]' role='dimension' type='nominal' />
+      <column caption='Water Quality' datatype='string' name='[water_quality]' role='dimension' type='nominal' />
+      <column caption='Waterpoint Type' datatype='string' name='[waterpoint_type]' role='dimension' type='nominal' />
+      <column caption='Waterpoint Type Group' datatype='string' name='[waterpoint_type_group]' role='dimension' type='nominal' />
+      <column caption='Wpt Name' datatype='string' name='[wpt_name]' role='dimension' type='nominal' />
+      <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' object-id='' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/HP/AppData/Local/Temp/TableauTemp/#TableauTemp_0jdy74o0mbd1nw129ved716visqa.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='03/18/2026 07:17:11 PM' username='tableau_internal_user'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id</remote-alias>
+              <ordinal>0</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>59400</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>amount_tsh</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[amount_tsh]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>amount_tsh</remote-alias>
+              <ordinal>1</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>128</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>date_recorded</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[date_recorded]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>date_recorded</remote-alias>
+              <ordinal>2</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>546</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>funder</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[funder]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>funder</remote-alias>
+              <ordinal>3</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1257</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>gps_height</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[gps_height]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>gps_height</remote-alias>
+              <ordinal>4</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5460</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>installer</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[installer]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>installer</remote-alias>
+              <ordinal>5</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1330</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>longitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[longitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>longitude</remote-alias>
+              <ordinal>6</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55513</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>latitude</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[latitude]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>latitude</remote-alias>
+              <ordinal>7</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>55513</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>wpt_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[wpt_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>wpt_name</remote-alias>
+              <ordinal>8</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13525</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>num_private</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[num_private]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>num_private</remote-alias>
+              <ordinal>9</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>329</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>basin</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[basin]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>basin</remote-alias>
+              <ordinal>10</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>subvillage</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[subvillage]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>subvillage</remote-alias>
+              <ordinal>11</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11983</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[region]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region</remote-alias>
+              <ordinal>12</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>21</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>region_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[region_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>region_code</remote-alias>
+              <ordinal>13</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>26</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>district_code</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[district_code]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>district_code</remote-alias>
+              <ordinal>14</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>22</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lga</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lga]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lga</remote-alias>
+              <ordinal>15</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>146</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ward</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[ward]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ward</remote-alias>
+              <ordinal>16</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4365</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>population</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[population]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>population</remote-alias>
+              <ordinal>17</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>767</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>public_meeting</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[public_meeting]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>public_meeting</remote-alias>
+              <ordinal>18</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>recorded_by</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recorded_by]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recorded_by</remote-alias>
+              <ordinal>19</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scheme_management</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scheme_management]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scheme_management</remote-alias>
+              <ordinal>20</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>scheme_name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[scheme_name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>scheme_name</remote-alias>
+              <ordinal>21</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3011</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>permit</remote-name>
+              <remote-type>11</remote-type>
+              <local-name>[permit]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>permit</remote-alias>
+              <ordinal>22</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>boolean</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>construction_year</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[construction_year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>construction_year</remote-alias>
+              <ordinal>23</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>67</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extraction_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[extraction_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extraction_type</remote-alias>
+              <ordinal>24</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>30</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extraction_type_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[extraction_type_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extraction_type_group</remote-alias>
+              <ordinal>25</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>17</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>extraction_type_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[extraction_type_class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>extraction_type_class</remote-alias>
+              <ordinal>26</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>management</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[management]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>management</remote-alias>
+              <ordinal>27</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>management_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[management_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>management_group</remote-alias>
+              <ordinal>28</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment</remote-alias>
+              <ordinal>29</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>payment_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[payment_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>payment_type</remote-alias>
+              <ordinal>30</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>water_quality</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[water_quality]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>water_quality</remote-alias>
+              <ordinal>31</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quality_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quality_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quality_group</remote-alias>
+              <ordinal>32</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quantity</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quantity</remote-alias>
+              <ordinal>33</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>quantity_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[quantity_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>quantity_group</remote-alias>
+              <ordinal>34</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source</remote-alias>
+              <ordinal>35</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source_type</remote-alias>
+              <ordinal>36</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>source_class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[source_class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>source_class</remote-alias>
+              <ordinal>37</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>waterpoint_type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[waterpoint_type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>waterpoint_type</remote-alias>
+              <ordinal>38</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>10</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>waterpoint_type_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[waterpoint_type_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>waterpoint_type_group</remote-alias>
+              <ordinal>39</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>9</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>status_group</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[status_group]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>status_group</remote-alias>
+              <ordinal>40</ordinal>
+              <family>clean_water_wells.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <object-id>[clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:status_group:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;functional&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;non functional&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;functional needs repair&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='clean_water_wells.csv' id='clean_water_wells.csv_CE0DAD5210DA4CC4AA704EB6419DC786'>
+            <properties context=''>
+              <relation connection='textscan.06jir330qecfew1dqrs4n11at3tr' name='clean_water_wells.csv' table='[clean_water_wells#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id' ordinal='0' />
+                  <column datatype='real' name='amount_tsh' ordinal='1' />
+                  <column datatype='date' name='date_recorded' ordinal='2' />
+                  <column datatype='string' name='funder' ordinal='3' />
+                  <column datatype='integer' name='gps_height' ordinal='4' />
+                  <column datatype='string' name='installer' ordinal='5' />
+                  <column datatype='real' name='longitude' ordinal='6' />
+                  <column datatype='real' name='latitude' ordinal='7' />
+                  <column datatype='string' name='wpt_name' ordinal='8' />
+                  <column datatype='integer' name='num_private' ordinal='9' />
+                  <column datatype='string' name='basin' ordinal='10' />
+                  <column datatype='string' name='subvillage' ordinal='11' />
+                  <column datatype='string' name='region' ordinal='12' />
+                  <column datatype='integer' name='region_code' ordinal='13' />
+                  <column datatype='integer' name='district_code' ordinal='14' />
+                  <column datatype='string' name='lga' ordinal='15' />
+                  <column datatype='string' name='ward' ordinal='16' />
+                  <column datatype='integer' name='population' ordinal='17' />
+                  <column datatype='boolean' name='public_meeting' ordinal='18' />
+                  <column datatype='string' name='recorded_by' ordinal='19' />
+                  <column datatype='string' name='scheme_management' ordinal='20' />
+                  <column datatype='string' name='scheme_name' ordinal='21' />
+                  <column datatype='boolean' name='permit' ordinal='22' />
+                  <column datatype='integer' name='construction_year' ordinal='23' />
+                  <column datatype='string' name='extraction_type' ordinal='24' />
+                  <column datatype='string' name='extraction_type_group' ordinal='25' />
+                  <column datatype='string' name='extraction_type_class' ordinal='26' />
+                  <column datatype='string' name='management' ordinal='27' />
+                  <column datatype='string' name='management_group' ordinal='28' />
+                  <column datatype='string' name='payment' ordinal='29' />
+                  <column datatype='string' name='payment_type' ordinal='30' />
+                  <column datatype='string' name='water_quality' ordinal='31' />
+                  <column datatype='string' name='quality_group' ordinal='32' />
+                  <column datatype='string' name='quantity' ordinal='33' />
+                  <column datatype='string' name='quantity_group' ordinal='34' />
+                  <column datatype='string' name='source' ordinal='35' />
+                  <column datatype='string' name='source_type' ordinal='36' />
+                  <column datatype='string' name='source_class' ordinal='37' />
+                  <column datatype='string' name='waterpoint_type' ordinal='38' />
+                  <column datatype='string' name='waterpoint_type_group' ordinal='39' />
+                  <column datatype='string' name='status_group' ordinal='40' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Funding vs Well Status'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_water_wells' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14g4i3g0uos07s1aiyzbu0fluutn'>
+            <column caption='Clean Funding' datatype='real' name='[Calculation_1104784500998144]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [amount_tsh] = 0 THEN NULL ELSE [amount_tsh] END' />
+            </column>
+            <column caption='Amount Tsh' datatype='real' name='[amount_tsh]' role='measure' type='quantitative' />
+            <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+            <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1104784500998144]' derivation='Sum' name='[sum:Calculation_1104784500998144:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784500998144:qk]</rows>
+        <cols>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]</cols>
+      </table>
+      <simple-id uuid='{4E1C22DB-3E73-4C1B-B5F1-2BA8E630AB85}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_water_wells' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.14g4i3g0uos07s1aiyzbu0fluutn'>
+            <column-instance column='[latitude]' derivation='Avg' name='[avg:latitude:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[longitude]' derivation='Avg' name='[avg:longitude:qk]' pivot='key' type='quantitative' />
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[latitude]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[longitude]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+            <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;functional&quot;</bucket>
+              <bucket>&quot;functional needs repair&quot;</bucket>
+              <bucket>&quot;non functional&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[avg:longitude:qk]' field-type='quantitative' max='3783844.2770784092' min='3588654.1094012167' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[avg:latitude:qk]' field-type='quantitative' max='-517110.74863663496' min='-598013.91407021042' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[avg:latitude:qk]</rows>
+        <cols>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[avg:longitude:qk]</cols>
+      </table>
+      <simple-id uuid='{ECF3E9E2-7344-43FF-B5F0-CFEFA3F95929}' />
+    </worksheet>
+    <worksheet name='Population Impact'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_water_wells' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14g4i3g0uos07s1aiyzbu0fluutn'>
+            <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+            <column caption='Population' datatype='integer' name='[population]' role='measure' type='quantitative' />
+            <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+            <column-instance column='[population]' derivation='Sum' name='[sum:population:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' value='159' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' />
+              <wedge-size column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:population:qk]' />
+              <size column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:population:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5712155103683472' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CF3F3367-6EF9-4393-8AA2-23D1E1456AA0}' />
+    </worksheet>
+    <worksheet name='Well Age Feature'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_water_wells' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14g4i3g0uos07s1aiyzbu0fluutn'>
+            <column caption='Well Age' datatype='integer' name='[Calculation_1104784502038529]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='IF [construction_year] = 0 THEN NULL &#13;&#10;ELSE YEAR(TODAY()) - [construction_year] &#13;&#10;END' />
+            </column>
+            <column caption='Construction Year' datatype='integer' name='[construction_year]' role='dimension' type='quantitative' />
+            <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+            <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+            <column-instance column='[Calculation_1104784502038529]' derivation='Sum' name='[sum:Calculation_1104784502038529:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='height' value='169' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784502038529:qk]' />
+              <color column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784502038529:qk]' />
+              <text column='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minheight' value='-1' />
+                <format attr='maxheight' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{5776E7B1-6C16-4B23-9C38-9195BAC1CFD5}' />
+    </worksheet>
+    <worksheet name='Well Status Distribution'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='clean_water_wells' name='federated.14g4i3g0uos07s1aiyzbu0fluutn' />
+          </datasources>
+          <datasource-dependencies datasource='federated.14g4i3g0uos07s1aiyzbu0fluutn'>
+            <column caption='Amount Tsh' datatype='real' name='[amount_tsh]' role='measure' type='quantitative' />
+            <column-instance column='[status_group]' derivation='None' name='[none:status_group:nk]' pivot='key' type='nominal' />
+            <column caption='Status Group' datatype='string' name='[status_group]' role='dimension' type='nominal' />
+            <column-instance column='[amount_tsh]' derivation='Sum' name='[sum:amount_tsh:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]</rows>
+        <cols>[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:amount_tsh:qk]</cols>
+      </table>
+      <simple-id uuid='{7146FA02-9A83-4F5D-99D8-41936EC6F0FC}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97858' id='10' param='horz' type-v2='layout-flow' w='97538' x='1231' y='1071'>
+            <zone h='97858' id='8' type-v2='layout-basic' w='97538' x='1231' y='1071'>
+              <zone h='71754' id='3' layout-strategy-id='distribute-evenly' param='vert' type-v2='layout-flow' w='97538' x='1231' y='27175'>
+                <zone h='71754' id='5' param='vert' type-v2='layout-flow' w='97538' x='1231' y='27175'>
+                  <zone fixed-size='122' h='17403' id='13' is-fixed='true' name='Well Age Feature' w='97538' x='1231' y='27175'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='32' h='5355' id='14' is-fixed='true' name='Well Age Feature' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784502038529:qk]' type-v2='color' w='97538' x='1231' y='44578'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='217' h='30121' id='15' is-fixed='true' name='Population Impact' w='97538' x='1231' y='49933'>
+                    <layout-cache type-h='fixed' type-w='fixed' />
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='55' h='8434' id='16' is-fixed='true' name='Population Impact' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' type-v2='color' w='97538' x='1231' y='80054'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                  <zone fixed-size='24' h='4284' id='17' is-fixed='true' name='Population Impact' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:population:qk]' type-v2='size' w='97538' x='1231' y='88488'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='26104' id='6' name='Well Status Distribution' w='97538' x='1231' y='1071'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='850' minheight='850' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='31' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97858' id='30' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1071'>
+                <zone fixed-size='217' h='26104' id='6' is-fixed='true' name='Well Status Distribution' w='97538' x='1231' y='1071'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='141' h='17403' id='13' is-fixed='true' name='Well Age Feature' w='97538' x='1231' y='27175'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='32' h='5355' id='14' name='Well Age Feature' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784502038529:qk]' type-v2='color' w='97538' x='1231' y='44578'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='251' h='30121' id='15' is-fixed='true' name='Population Impact' w='97538' x='1231' y='49933'>
+                  <layout-cache type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='55' h='8434' id='16' name='Population Impact' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' type-v2='color' w='97538' x='1231' y='80054'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='24' h='4284' id='17' name='Population Impact' pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:population:qk]' type-v2='size' w='97538' x='1231' y='88488'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{3A05FACB-AFCB-4B13-A6A0-A4C91DB0610A}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.5' source-height='44'>
+    <window class='worksheet' name='Well Status Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BEBF91F1-C16C-4C8E-BEB2-E1FC77C092FF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Population Impact' />
+        <viewpoint name='Well Age Feature' />
+        <viewpoint name='Well Status Distribution' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{321EBBAD-23D6-49CA-B4B4-1573A6509675}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{70CDDECE-5534-40CB-BB49-F58A93DFFA0D}' />
+    </window>
+    <window class='worksheet' name='Funding vs Well Status'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{754A660D-F2CC-4AA2-9ABD-BC7012BD7ABD}' />
+    </window>
+    <window class='worksheet' name='Population Impact'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[none:status_group:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:population:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{24D769ED-FC0F-4AA5-8CB3-9FA0533ED3FC}' />
+    </window>
+    <window class='worksheet' name='Well Age Feature'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='30'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.14g4i3g0uos07s1aiyzbu0fluutn].[sum:Calculation_1104784502038529:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8175099-480A-4F27-B73C-44BCD4272EEC}' />
+    </window>
+  </windows>
+</workbook>
