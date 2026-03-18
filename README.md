@@ -1,28 +1,16 @@
 #  Machine Learning for Public Infrastructure Reliability: Predicting Water Well Status in Tanzania
 
-##  Project Overview
+##  ***Project Overview***
 
-Access to clean and reliable water remains a major challenge in Tanzania, where many water wells are either non-functional or in need of repair.
+Access to clean and functional water sources is essential for communities.
+This project aims to predict the condition of water wells (functional, needs repair, or non-functional) using available data.
 
-This project aims to build a **machine learning model** that predicts the condition of a water well based on its characteristics, such as location, construction details, and water quality.
-
-The solution is designed to support **government agencies and NGOs** in identifying wells that require maintenance, enabling more efficient allocation of resources.
-
----
-
-##  Objectives
-
-* Predict the condition of a water well:
-
-  * Functional
-  * Functional but needs repair
-  * Non-functional
-* Identify key factors that influence well performance
-* Provide actionable insights for infrastructure planning and maintenance
+### ***Objective***
+The goal is to build machine learning models that can accurately classify the condition of a water well, helping organizations prioritize maintenance and resource allocation.
 
 ---
 
-##  Dataset Description
+### ***Dataset Description and Understanding***
 
 The dataset contains information about **59,400 water wells** in Tanzania, including:
 
@@ -34,118 +22,59 @@ The dataset contains information about **59,400 water wells** in Tanzania, inclu
 The target variable is **`status_group`**, representing the operational condition of each well.
 
 ---
+### ***Approach***
+1. Data Cleaning & Preprocessing
 
-##  Data Preprocessing
+This step involves handling missing values, correcting inconsistencies, and transforming raw data into a format suitable for modeling.
 
-Several preprocessing steps were applied to prepare the data for modeling:
+2. Feature Engineering
 
-### Handling Missing Values
+Informative features are created or existing ones are transformed to improve model performance ensuring the model captures patterns that may eventually influence the water well's operational status.
 
-* Numerical features were imputed using the **median**
-* Categorical features were imputed using the **most frequent value**
+3. Model Building:
+   - Logistic Regression (Baseline)
+   - Random Forest (Advanced)
+   - Ensemble Model (Voting Classifier)
 
-### Feature Engineering
+4. Model Evaluation using Accuracy & Confusion Matrix
+This provides a clear view of functional and non functional wells using the different model performances which are measured using accuracy, which reflects the proportion of correct predictions.
 
-* Created a new feature **`pump_age`** from construction year
-* Handled invalid values (e.g., construction year = 0)
+### ***Key Features***
+- Reusable evaluation function
+Using one single function that trains, predicts and evaluates any model using accuracy, classification report and confusion matrix ensuring testing of multiple models stay efficient and consistent.
 
-### Categorical Optimization
+- Pipeline-based preprocessing
+This ensures that all transformations are applied consistently during training and testing, reducing errors and improving reproducibility.
 
-* High-cardinality features such as `installer` and `funder` were grouped into an **"Other"** category to reduce dimensionality
+- Ensemble learning
+Combines predictions from multiple models (e.g., Logistic Regression and Random Forest) to make more accurate and stable predictions.
 
-### Feature Selection
 
-* Removed non-informative columns such as IDs and redundant variables
-* Dropped duplicate categorical representations (e.g., grouped vs. class-based features)
+### ***Results***
+- Random Forest outperformed baseline
+- Ensemble model provided the best overall performance
 
----
 
-##  Machine Learning Pipeline
+### ***Recommendations***
+- Use ensemble model for deployment
+- Improve data quality for better predictions
+- Prioritize repairs for wells predicted as non-functional as the older wells have declining water quantity.
 
-A full **end-to-end pipeline** was built using Scikit-learn:
 
-* Numerical preprocessing:
-
-  * Missing value imputation
-  * Standard scaling
-
-* Categorical preprocessing:
-
-  * Missing value imputation
-  * One-hot encoding
-
-* Model integration using a unified pipeline structure
-
-This ensures reproducibility and prevents data leakage.
-
----
-
-##  Models Used
-
-The following models were trained and evaluated:
-
-* **Random Forest Classifier**
-* **Extra Trees Classifier**
-* **Gradient Boosting Classifier**
-
----
-
-##  Model Performance
-
-| Model             | Accuracy |
-| ----------------- | -------- |
-| Random Forest     | 80.4%    |
-| Extra Trees       | 79.4%    |
-| Gradient Boosting | 75.9%    |
-
-The **Random Forest model** achieved the best performance and was selected as the final model.
-
----
-
-##  Key Insights
-
-* **Geographic location** (latitude and longitude) is the strongest predictor of well functionality
-* **Water quantity** (e.g., dry or insufficient) strongly indicates failure
-* **Older wells** are more likely to be non-functional
-* Wells serving larger populations may experience higher failure rates
-* Infrastructure characteristics such as extraction type and waterpoint type influence performance
-
----
-
-##  Limitations
-
-* The model performs less effectively on the **"needs repair"** category due to class imbalance
-* Geographic features dominate predictions, which may limit generalizability to new regions
-* Further tuning and feature engineering could improve performance
-
----
-
-##  Business Impact
-
-This model can support:
-
-* **Preventative maintenance planning**
-* **Efficient allocation of repair resources**
-* **Identification of high-risk regions**
-* **Improved infrastructure decision-making**
-
-Ultimately, the solution contributes to improving **access to clean and reliable water**.
-
----
-
-##  Future Improvements
-
-* Hyperparameter tuning for improved accuracy
-* Advanced handling of class imbalance
-* Incorporation of geospatial analysis
-* Deployment as a decision-support tool
+### ***Limitations***
+- Missing data in key fields
+- Limited feature engineering
 
 ---
 
 ##  Conclusion
 
 This project demonstrates the application of machine learning to a real-world infrastructure problem.
-
 By leveraging data-driven insights, it is possible to identify failing water wells and support better planning and resource allocation, ultimately improving water access in Tanzania.
 
 ---
+
+### ***Future Work***
+- Hyperparameter tuning
+- Geospatial modeling
+- Handling class imbalance further
